@@ -1,12 +1,9 @@
-
-let https;
-try {
-  https = await import('node:https');
-} catch (err) {
-  console.error('https support is disabled!');
-}
-
 const server = Bun.serve({
+  // tls: {
+  //   key: Bun.file("./key.pem"),
+  //   cert: Bun.file("./cert.pem"),
+  //   passphrase: "9615",
+  // },
   port: 3000,
   static: {
     // serve a file by buffering it in memory
@@ -24,9 +21,10 @@ const server = Bun.serve({
   },
 
   fetch(req) {
+    console.log('REQUIEST', req)
     return new Response("404!");
-  },
+  }
+
 });
 
 console.log(`Listening on http://localhost:${server.port} ...`);
-
