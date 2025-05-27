@@ -1,40 +1,90 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
-
-  </head>
-  <body>
-  <div class="text-container">
-    Bubbles
-  </div>
-  <div class="gradient-bg">
-    <svg xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-          <feBlend in="SourceGraphic" in2="goo" />
-        </filter>
-      </defs>
-    </svg>
-    <div class="gradients-container">
-      <div class="g1"></div>
-      <div class="g2"></div>
-      <div class="g3"></div>
-      <div class="g4"></div>
-      <div class="g5"></div>
-      <div class="interactive"></div>
-    </div>
-  </div>
-    <script type="module" src="main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/vite.svg" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Елисей</title>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			rel="stylesheet"
+			href="assets/animated-bg.css" />
+		<link
+			rel="stylesheet"
+			href="assets/globals.css" />
+		<link
+			rel="stylesheet"
+			href="assets/normalize.css" />
+		<link
+			rel="stylesheet"
+			href="assets/styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="cv-container">
+				<div class="cv__left">
+					<div class="cv__left-img-wrapper"></div>
+					<div>
+						About me Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Maxime natus reiciendis impedit illo, a omnis pariatur obcaecati eum
+						sapiente blanditiis fugiat assumenda eos laboriosam iure, beatae
+						praesentium quas atque totam? Porro velit voluptas eveniet unde
+						asperiores neque accusantium voluptates? Incidunt et quasi nesciunt
+						fuga culpa dolore repellendus deserunt nobis. Optio ex nisi libero
+						nemo quasi! Deleniti animi nisi esse sit expedita tenetur similique
+						blanditiis, autem asperiores voluptates a cum commodi hic! Ex,
+						doloremque. Harum ipsum nam inventore voluptates. Hic, iste.
+					</div>
+				</div>
+				<div class="cv__right">
+         <div>1</div> 
+        </div>
+			</div>
+		</div>
+		<div class="gradient-bg">
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur
+							in="SourceGraphic"
+							stdDeviation="10"
+							result="blur" />
+						<feColorMatrix
+							in="blur"
+							mode="matrix"
+							values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+							result="goo" />
+						<feBlend
+							in="SourceGraphic"
+							in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+			<div class="gradients-container">
+				<div class="g1"></div>
+				<div class="g2"></div>
+				<div class="g3"></div>
+				<div class="g4"></div>
+				<div class="g5"></div>
+				<div class="interactive"></div>
+			</div>
+		</div>
+		<script
+			type="module"
+			src="main.js"></script>
+	</body>
 </html>
